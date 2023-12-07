@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Design Intelligence Survey</h1>
+    <p id="description">Survey for job application</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name<input id="name" type="text" placeholder="Enter your full name" required /></label>
+        <label id="email-label">Email<input id="email" type="email" placeholder="Enter your email ID" required /></label>
+        <label id="number-label">Experience (in number of years)<input id="number" type="number" max="40" min="5" placeholder="5" /></label>
+        <label id="dropdown-label">Position you want to apply for: 
+          <select id="dropdown">
+            <option id="1">Structural Engineer</option>
+            <option id="2">Site Engineer</option>
+            <option id="3">Drafting Engineer</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="location-label">Location you want to apply for: 
+          <input type="radio" name="location" checked value="Banglore" class="inline"/>Banglore
+          <input type="radio" name="location" value="Delhi" class="inline"/>Delhi
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          <legend>Select the softwares in which your are proficient:
+          </legend>
+          <input type="checkbox" value="1" />STAAD.Pro
+          <input type="checkbox" value="2" />Etabs
+          <input type="checkbox" value="3"/>Tekla
+          <input type="checkbox" value="4" />AutoCAD
+          <input type="checkbox" value="5" />MS Excel
+          <input type="checkbox" value="6"/>Revit
+        </label>
+        <label>Tell us more about yourself<textarea id="bio" placeholder="Add a short bio..."></textarea></label>
+      </fieldset>
+      <label>
+        <input type="submit" id="submit">
+      <label>
+    </form>
+  </body>
+</html>

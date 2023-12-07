@@ -1,0 +1,57 @@
+body {
+  background-color: rgba(255,99,71,0.5);
+  font-family: Monospace;
+  opacity: 1;
+  font-size: 15
+}
+h1 {
+  text-align: center;
+  padding: 1em 0 0 0;
+  font-family: monospace;
+}
+
+p {
+  padding: -1em 0 0 0;
+  text-align: center;
+  font-family: monospace;
+  font-size: 20;
+}
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid rgba(255,99,71,0.9);
+}
+
+.inline {
+  //width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+label {
+  //display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  //width: 100%;
+  min-height: 2em;
+}
+
+input[value="1"], input[value="2"], input[value="3"], input[value="4"], input[value="5"], input[value="6"],  {
+  display: block;
+  margin: 0;
+  text-align: left;
+  width: 50%;
+}
